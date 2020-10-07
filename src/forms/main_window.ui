@@ -572,7 +572,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgb
           </column>
           <column>
            <property name="text">
-            <string>Последнее открытие </string>
+            <string>Последнее изменение</string>
            </property>
            <property name="font">
             <font>
