@@ -368,7 +368,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgb
            <string notr="true">background-color: rgba(242, 242, 242, 242);</string>
           </property>
           <property name="inputMethodHints">
-           <set>Qt::ImhDate|Qt::ImhMultiLine|Qt::ImhTime</set>
+           <set>Qt::ImhNone</set>
           </property>
           <property name="plainText">
            <string/>
@@ -489,7 +489,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgb
            <string notr="true">background-color: rgba(242, 242, 242, 242);</string>
           </property>
           <property name="frameShape">
-           <enum>QFrame::VLine</enum>
+           <enum>QFrame::StyledPanel</enum>
           </property>
           <property name="frameShadow">
            <enum>QFrame::Sunken</enum>
@@ -917,7 +917,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgb
     <string>Удалить текущую заметку</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+Del</string>
+    <string>Ctrl+R</string>
    </property>
    <property name="shortcutContext">
     <enum>Qt::ApplicationShortcut</enum>
