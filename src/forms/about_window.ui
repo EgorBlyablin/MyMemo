@@ -37,6 +37,10 @@
   <property name="windowTitle">
    <string>О программе</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../images/notepad.png</normaloff>../images/notepad.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);
 border-color: rgb(0, 0, 0);</string>

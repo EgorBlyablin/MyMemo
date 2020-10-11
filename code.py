@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 
+from os import mkdir
 import subprocess
 import sys
+import os
+
+from PyQt5 import QtCore
 
 try:
     import datetime
@@ -11,7 +15,7 @@ try:
     import PyQt5
     from PyQt5 import QtGui, QtWidgets, uic
     from PyQt5.QtGui import QKeyEvent
-    from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QTreeWidgetItemIterator
+    from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QTreeWidgetItemIterator, QTreeWidgetItem
 except:
     for library in ["datetime", "PyQt5", "time"]:
         subprocess.run(["pip install", library])
@@ -49,6 +53,7 @@ class MainWindow(QMainWindow):
                 self.redraw_list_menu()
                 self.selectItem(self.last)
         except:
+            mkdir("userFiles")
             with open("userFiles/data.json", "w", encoding="utf8") as file:
                 self.file = {
                     "notes_dict": self.notes_dict,
@@ -214,6 +219,17 @@ class MainWindow(QMainWindow):
             self.about_quit.save_changes_window()
         else:
             app.closeAllWindows()   
+
+
+class TableWidgetItem(QtWidgets.QTableWidgetItem):
+    def __lt__(self, other):
+        print(0)
+        if self.notesList.sortColumn == 1:
+            print(1)
+            key1 = self.text(0)
+            key2 = other.text(0)
+            return self.notesList[key1]["date_to_seconds"] < self.notesList[key2]["date_to_seconds"]
+        
 
 class AboutWindow(QWidget):
     def __init__(self, *args):
