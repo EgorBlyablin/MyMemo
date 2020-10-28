@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
+import os
 from os import mkdir
 import subprocess
 import sys
-import os
 
-from PyQt5 import QtCore
+#from PyQt5.QtGui import QFont, QFontDatabase
 
 try:
     import datetime
@@ -13,11 +13,11 @@ try:
     import time
 
     import PyQt5
-    from PyQt5 import QtGui, QtWidgets, uic
+    from PyQt5 import QtGui, QtWidgets, uic, QtCore
     from PyQt5.QtGui import QKeyEvent
     from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QTreeWidgetItemIterator, QTreeWidgetItem
 except:
-    for library in ["datetime", "PyQt5", "time"]:
+    for library in ["datetime", "PyQt5", "time", "json"]:
         subprocess.run(["pip install", library])
         
     import datetime
@@ -25,7 +25,7 @@ except:
     import time
 
     import PyQt5
-    from PyQt5 import QtGui, QtWidgets, uic
+    from PyQt5 import QtGui, QtWidgets, uic, QtCore
     from PyQt5.QtGui import QKeyEvent
     from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QTreeWidgetItemIterator
 
@@ -345,6 +345,7 @@ def except_hook(cls, exception, traceback):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    # QFontDatabase.addApplicationFont("src/fonts/obelix_pro.ttf")
     mainWin = MainWindow()
     mainWin.show()
     sys.excepthook = except_hook
