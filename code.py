@@ -7,23 +7,17 @@ import sys
 try:
     import datetime
     import json
-    import time
 
-    import PyQt5
-    from PyQt5 import QtGui, QtWidgets, uic, QtCore
-    from PyQt5.QtGui import QKeyEvent
-    from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QTreeWidgetItemIterator, QTreeWidgetItem
+    from PyQt5 import QtGui, QtWidgets, uic
+    from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QTreeWidgetItemIterator
 except:
     for library in ["datetime", "PyQt5", "time", "json"]:
         subprocess.run(["pip install", library])
         
     import datetime
     import json
-    import time
 
-    import PyQt5
     from PyQt5 import QtGui, QtWidgets, uic, QtCore
-    from PyQt5.QtGui import QKeyEvent
     from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QTreeWidgetItemIterator
 
 
@@ -50,7 +44,6 @@ class MainWindow(QMainWindow):
                 self.redraw_list_menu()
                 self.selectItem(self.last)
         except: ## create .json if there is no such
-            mkdir("userFiles")
             with open("userFiles/data.json", "w", encoding="utf8") as file:
                 self.file = {
                     "notes_dict": self.notes_dict,
