@@ -1,6 +1,6 @@
 # Приложение-заметочник MyMemo
 ###### Разработано [Бляблиным Егором](https://vk.com/egorka_82) в качестве проекта для онлайн-платформы [Яндекс.Лицей](https://yandexlyceum.ru/).
-<p align="left"><a target="_blank" href="https://yandexlyceum.ru/"><img src="https://it-cube48.ru/wp-content/uploads/2019/10/Logotip-YAndeks-Litsej.png" width=60%></img></a></p>
+<p align="left"><a target="_blank" href="https://yandexlyceum.ru/"><img src="https://it-cube48.ru/wp-content/uploads/2019/10/Logotip-YAndeks-Litsej.png" width=65%></img></a></p>
 
 **Актуальная версия: `1.0`**
 
@@ -19,7 +19,7 @@ MyMemo может:
 Приложение сохраняет заметки в файл `data.json`, если удалить файл, то при запуске программа запустится в "чистом" режиме.
 #
 <p align="left">
-<a target="_blank" href="python.org"><img src="https://www.vippng.com/png/full/84-842346_related-image-python-programming.png" width=40%></img></a>
+<a target="_blank" href="python.org"><img src="https://www.vippng.com/png/full/84-842346_related-image-python-programming.png" width=50%></img></a>
 </p>
 
 Работоспособность программы проверена на версиях:
