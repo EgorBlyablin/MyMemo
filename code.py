@@ -334,7 +334,6 @@ def except_hook(cls, exception, traceback):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    ## QFontDatabase.addApplicationFont("src/fonts/obelix_pro.ttf")
     mainWin = MainWindow()
     mainWin.show()
     sys.excepthook = except_hook
