@@ -19,7 +19,7 @@ MyMemo может:
 Приложение сохраняет заметки в файл `data.json`, если удалить файл, то при запуске программа запустится в "чистом" режиме.
 #
 <p align="left">
-<a target="_blank" href="python.org"><img src="https://www.vippng.com/png/full/84-842346_related-image-python-programming.png" width=50%></img></a>
+<a href="https://python.org/"><img src="https://www.vippng.com/png/full/84-842346_related-image-python-programming.png" width=50%></img></a>
 </p>
 
 Работоспособность программы проверена на версиях:
